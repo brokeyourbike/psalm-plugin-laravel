@@ -2,7 +2,7 @@
 
 [![Packagist](https://img.shields.io/packagist/v/brokeyourbike/plugin-laravel.svg)](https://packagist.org/packages/brokeyourbike/plugin-laravel)
 [![Packagist](https://img.shields.io/packagist/dt/brokeyourbike/plugin-laravel.svg)](https://packagist.org/packages/brokeyourbike/plugin-laravel)
-![Type coverage](https://shepherd.dev/github/brokeyourbike/laravel-psalm-plugin/coverage.svg)
+![Type coverage](https://shepherd.dev/github/brokeyourbike/psalm-plugin-laravel/coverage.svg)
 ![Tests](https://img.shields.io/github/workflow/status/brokeyourbike/psalm-plugin-laravel/Run%20Tests?label=tests)
 
 ## Overview
