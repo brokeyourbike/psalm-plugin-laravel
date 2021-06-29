@@ -11,11 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php: [7.3, 7.4]
-        illuminate_version: [7.*, 8.*]
-        composer_flags:  ['', '--prefer-lowest']
+        php: [8.0]
+        composer_flags:  ['--prefer-lowest']
 
-    name: PHP ${{ matrix.php }} | Illuminate ${{ matrix.illuminate_version }} | Composer Flags ${{ matrix.composer_flags }}
+    name: PHP ${{ matrix.php }} | Composer Flags ${{ matrix.composer_flags }}
 
     steps:
     - name: Checkout code
@@ -30,7 +29,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        composer require "illuminate/container:${{ matrix.illuminate_version }}" "illuminate/contracts:${{ matrix.illuminate_version }}" "illuminate/database:${{ matrix.illuminate_version }}" "illuminate/http:${{ matrix.illuminate_version }}" "illuminate/support:${{ matrix.illuminate_version }}" --no-interaction --no-progress --prefer-dist ${{ matrix.composer_flags }}
+        composer install --no-interaction --no-progress --prefer-dist ${{ matrix.composer_flags }}
 
     - name: Run Tests
       run: composer test

@@ -13,8 +13,15 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.0'
+        coverage: none
+        tools: composer:v2
+
     - name: Install dependencies
       run: export COMPOSER_ROOT_VERSION=dev-master && composer install --prefer-dist --no-progress --no-suggest
-      
+
     - name: Run Psalm
       run: vendor/bin/psalm --threads=2 --shepherd
