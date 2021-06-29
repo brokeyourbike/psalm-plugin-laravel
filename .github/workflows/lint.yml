@@ -21,7 +21,7 @@ jobs:
           tools: composer:v2
 
       - name: Install dependencies
-        run: export COMPOSER_ROOT_VERSION=dev-master && composer install --prefer-dist --no-progress --no-suggest
+        run: export COMPOSER_ROOT_VERSION=dev-master && composer install --prefer-dist --no-interaction --no-progress --no-suggest
 
       - name: PHPCS check
         uses: chekalsky/phpcs-action@v1
