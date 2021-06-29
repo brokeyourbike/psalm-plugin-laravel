@@ -2,10 +2,12 @@
 
 namespace Tests\BrokeYourBike\LaravelPlugin\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOneThrough;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 final class Mechanic extends Model {
+    use HasFactory;
     protected $table = 'mechanics';
 
     /**
