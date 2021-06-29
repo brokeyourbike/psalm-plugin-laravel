@@ -2,6 +2,11 @@
     "name": "brokeyourbike/plugin-laravel",
     "description": "A Laravel 8 plugin for Psalm. PHP 8 only.",
     "type": "psalm-plugin",
+    "keywords": [
+        "testing",
+        "psalm",
+        "laravel"
+    ],
     "require": {
         "php": "^8",
         "ext-simplexml": "*",
