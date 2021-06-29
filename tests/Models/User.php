@@ -2,10 +2,10 @@
 
 namespace Tests\BrokeYourBike\LaravelPlugin\Models;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Model;
 
 /**
  * @property string $id
@@ -42,6 +42,6 @@ final class User extends Model {
      */
     public function image()
     {
-        return $this->morphOne(Image::Class, 'imageable');
+        return $this->morphOne(Image::class, 'imageable');
     }
 }
