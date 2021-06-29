@@ -12,9 +12,8 @@ jobs:
     strategy:
       matrix:
         php: [8.0]
-        composer_flags:  ['--prefer-lowest']
 
-    name: PHP ${{ matrix.php }} | Composer Flags ${{ matrix.composer_flags }}
+    name: PHP ${{ matrix.php }}
 
     steps:
     - name: Checkout code
@@ -29,7 +28,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        composer install --no-interaction --no-progress --prefer-dist ${{ matrix.composer_flags }}
+        composer install --no-interaction --no-progress --prefer-dist
 
     - name: Run Tests
       run: composer test
