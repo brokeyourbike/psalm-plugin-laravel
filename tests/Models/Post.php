@@ -2,10 +2,10 @@
 
 namespace Tests\BrokeYourBike\LaravelPlugin\Models;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Model;
 
 final class Post extends Model {
     protected $table = 'posts';
@@ -27,7 +27,7 @@ final class Post extends Model {
     }
 
     /**
-     * @psalm-return \Illuminate\Database\Eloquent\Relations\MorphToMany<Tag>
+     * @psalm-return MorphToMany<Tag>
      */
     public function tags(): MorphToMany
     {
