@@ -1,6 +1,6 @@
 <?php
 
-namespace Psalm\LaravelPlugin\Handlers\Eloquent\Schema;
+namespace BrokeYourBike\LaravelPlugin\Handlers\Eloquent\Schema;
 
 class SchemaColumn
 {

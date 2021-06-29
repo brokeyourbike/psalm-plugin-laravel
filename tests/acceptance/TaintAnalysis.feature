@@ -11,7 +11,7 @@ Feature: taint
           <ignoreFiles> <directory name="../../vendor"/> </ignoreFiles>
         </projectFiles>
         <plugins>
-          <pluginClass class="Psalm\LaravelPlugin\Plugin"/>
+          <pluginClass class="BrokeYourBike\LaravelPlugin\Plugin"/>
         </plugins>
       </psalm>
       """
@@ -21,7 +21,7 @@ Feature: taint
     """
     <?php declare(strict_types=1);
 
-    namespace Tests\Psalm\LaravelPlugin\Sandbox;
+    namespace Tests\BrokeYourBike\LaravelPlugin\Sandbox;
 
     use \Illuminate\Http\Request;
     use Illuminate\Support\Facades\DB;

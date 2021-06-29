@@ -12,7 +12,7 @@ Feature: ExceptionHandler
         </projectFiles>
         <plugins>
           <plugin filename="somefile.php" />
-          <pluginClass class="Psalm\LaravelPlugin\Plugin"/>
+          <pluginClass class="BrokeYourBike\LaravelPlugin\Plugin"/>
         </plugins>
       </psalm>
       """

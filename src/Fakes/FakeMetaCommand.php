@@ -1,6 +1,6 @@
 <?php
 
-namespace Psalm\LaravelPlugin\Fakes;
+namespace BrokeYourBike\LaravelPlugin\Fakes;
 
 class FakeMetaCommand extends \Barryvdh\LaravelIdeHelper\Console\MetaCommand
 {

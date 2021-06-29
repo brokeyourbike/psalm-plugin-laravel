@@ -1,24 +1,21 @@
 <?php declare(strict_types=1);
 
-namespace Psalm\LaravelPlugin\Handlers\Eloquent;
+namespace BrokeYourBike\LaravelPlugin\Handlers\Eloquent;
 
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
-use PhpParser\Node\Expr\MethodCall;
-use Psalm\CodeLocation;
-use Psalm\Context;
-use Psalm\Internal\MethodIdentifier;
-use Psalm\LaravelPlugin\Plugin;
-use Psalm\LaravelPlugin\Util\ProxyMethodReturnTypeProvider;
-use Psalm\Plugin\Hook\MethodReturnTypeProviderInterface;
-use Psalm\Plugin\Hook\PropertyExistenceProviderInterface;
-use Psalm\Plugin\Hook\PropertyTypeProviderInterface;
-use Psalm\Plugin\Hook\AfterClassLikeVisitInterface;
-use Psalm\StatementsSource;
-use Psalm\Type;
-use Psalm\Type\Union;
-use function in_array;
 use function strtolower;
+use function in_array;
+use Psalm\Type\Union;
+use Psalm\Type;
+use Psalm\StatementsSource;
+use Psalm\Plugin\Hook\MethodReturnTypeProviderInterface;
+use Psalm\Plugin\Hook\AfterClassLikeVisitInterface;
+use Psalm\Internal\MethodIdentifier;
+use Psalm\Context;
+use Psalm\CodeLocation;
+use PhpParser\Node\Expr\MethodCall;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
+use BrokeYourBike\LaravelPlugin\Util\ProxyMethodReturnTypeProvider;
 
 final class ModelMethodHandler implements MethodReturnTypeProviderInterface, AfterClassLikeVisitInterface
 {

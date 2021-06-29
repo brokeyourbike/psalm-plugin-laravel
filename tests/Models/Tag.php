@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Tests\Psalm\LaravelPlugin\Models;
+namespace Tests\BrokeYourBike\LaravelPlugin\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;

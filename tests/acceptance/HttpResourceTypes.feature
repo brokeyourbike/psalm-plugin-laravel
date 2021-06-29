@@ -11,17 +11,17 @@ Feature: Http Resource Types
           <ignoreFiles> <directory name="../../vendor"/> </ignoreFiles>
         </projectFiles>
         <plugins>
-          <pluginClass class="Psalm\LaravelPlugin\Plugin"/>
+          <pluginClass class="BrokeYourBike\LaravelPlugin\Plugin"/>
         </plugins>
       </psalm>
       """
     And I have the following code preamble
       """
       <?php declare(strict_types=1);
-      namespace Tests\Psalm\LaravelPlugin\Sandbox;
+      namespace Tests\BrokeYourBike\LaravelPlugin\Sandbox;
 
       use Illuminate\Http\Resources\Json\JsonResource;
-      use Tests\Psalm\LaravelPlugin\Models\User;
+      use Tests\BrokeYourBike\LaravelPlugin\Models\User;
 
 
       /**

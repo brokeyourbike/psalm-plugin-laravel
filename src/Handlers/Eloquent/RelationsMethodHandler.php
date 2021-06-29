@@ -1,27 +1,27 @@
 <?php declare(strict_types=1);
 
-namespace Psalm\LaravelPlugin\Handlers\Eloquent;
+namespace BrokeYourBike\LaravelPlugin\Handlers\Eloquent;
 
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\HasManyThrough;
-use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Database\Eloquent\Relations\HasOneOrMany;
-use Illuminate\Database\Eloquent\Relations\HasOneThrough;
-use Illuminate\Database\Eloquent\Relations\Relation;
-use Illuminate\Database\Query\Builder as QueryBuilder;
-use PhpParser\Node\Expr\MethodCall;
-use Psalm\CodeLocation;
-use Psalm\Context;
-use Psalm\Internal\MethodIdentifier;
-use Psalm\LaravelPlugin\Util\ProxyMethodReturnTypeProvider;
-use Psalm\Plugin\Hook\MethodReturnTypeProviderInterface;
-use Psalm\StatementsSource;
-use Psalm\Type;
-use Psalm\Type\Union;
 use function in_array;
+use Psalm\Type\Union;
+use Psalm\Type;
+use Psalm\StatementsSource;
+use Psalm\Plugin\Hook\MethodReturnTypeProviderInterface;
+use Psalm\Internal\MethodIdentifier;
+use Psalm\Context;
+use Psalm\CodeLocation;
+use PhpParser\Node\Expr\MethodCall;
+use Illuminate\Database\Query\Builder as QueryBuilder;
+use Illuminate\Database\Eloquent\Relations\Relation;
+use Illuminate\Database\Eloquent\Relations\HasOneThrough;
+use Illuminate\Database\Eloquent\Relations\HasOneOrMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Builder;
+use BrokeYourBike\LaravelPlugin\Util\ProxyMethodReturnTypeProvider;
 
 final class RelationsMethodHandler implements MethodReturnTypeProviderInterface
 {

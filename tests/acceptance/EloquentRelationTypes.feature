@@ -11,14 +11,14 @@ Feature: Eloquent Relation Types
           <ignoreFiles> <directory name="../../vendor"/> </ignoreFiles>
         </projectFiles>
         <plugins>
-          <pluginClass class="Psalm\LaravelPlugin\Plugin"/>
+          <pluginClass class="BrokeYourBike\LaravelPlugin\Plugin"/>
         </plugins>
       </psalm>
       """
     And I have the following code preamble
       """
       <?php declare(strict_types=1);
-      namespace Tests\Psalm\LaravelPlugin\Sandbox;
+      namespace Tests\BrokeYourBike\LaravelPlugin\Sandbox;
 
       use \Illuminate\Database\Eloquent\Builder;
       use \Illuminate\Database\Eloquent\Model;
@@ -33,15 +33,15 @@ Feature: Eloquent Relation Types
       use \Illuminate\Database\Eloquent\Relations\MorphTo;
       use \Illuminate\Database\Eloquent\Relations\MorphToMany;
 
-      use Tests\Psalm\LaravelPlugin\Models\Comment;
-      use Tests\Psalm\LaravelPlugin\Models\Image;
-      use Tests\Psalm\LaravelPlugin\Models\Mechanic;
-      use Tests\Psalm\LaravelPlugin\Models\Phone;
-      use Tests\Psalm\LaravelPlugin\Models\Post;
-      use Tests\Psalm\LaravelPlugin\Models\Role;
-      use Tests\Psalm\LaravelPlugin\Models\Tag;
-      use Tests\Psalm\LaravelPlugin\Models\User;
-      use Tests\Psalm\LaravelPlugin\Models\Video;
+      use Tests\BrokeYourBike\LaravelPlugin\Models\Comment;
+      use Tests\BrokeYourBike\LaravelPlugin\Models\Image;
+      use Tests\BrokeYourBike\LaravelPlugin\Models\Mechanic;
+      use Tests\BrokeYourBike\LaravelPlugin\Models\Phone;
+      use Tests\BrokeYourBike\LaravelPlugin\Models\Post;
+      use Tests\BrokeYourBike\LaravelPlugin\Models\Role;
+      use Tests\BrokeYourBike\LaravelPlugin\Models\Tag;
+      use Tests\BrokeYourBike\LaravelPlugin\Models\User;
+      use Tests\BrokeYourBike\LaravelPlugin\Models\Video;
       """
 
   Scenario: Models can declare one to one relationships

@@ -1,13 +1,13 @@
 <?php
 
-namespace Psalm\LaravelPlugin\Providers;
+namespace BrokeYourBike\LaravelPlugin\Providers;
 
-use Psalm\LaravelPlugin\Fakes\FakeFilesystem;
-use Psalm\LaravelPlugin\Fakes\FakeModelsCommand;
-use Psalm\LaravelPlugin\Handlers\Eloquent\Schema\SchemaAggregator;
+use function unlink;
 use function glob;
 use function dirname;
-use function unlink;
+use BrokeYourBike\LaravelPlugin\Handlers\Eloquent\Schema\SchemaAggregator;
+use BrokeYourBike\LaravelPlugin\Fakes\FakeModelsCommand;
+use BrokeYourBike\LaravelPlugin\Fakes\FakeFilesystem;
 
 final class ModelStubProvider implements GeneratesStubs
 {

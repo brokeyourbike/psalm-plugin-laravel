@@ -1,11 +1,11 @@
 <?php
 
-namespace Psalm\LaravelPlugin\Handlers\Eloquent\Schema;
+namespace BrokeYourBike\LaravelPlugin\Handlers\Eloquent\Schema;
 
-use PhpParser;
-use function count;
-use function is_string;
 use function strtolower;
+use function is_string;
+use function count;
+use PhpParser;
 
 class SchemaAggregator
 {

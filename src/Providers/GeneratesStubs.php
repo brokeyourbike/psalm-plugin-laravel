@@ -1,6 +1,6 @@
 <?php
 
-namespace Psalm\LaravelPlugin\Providers;
+namespace BrokeYourBike\LaravelPlugin\Providers;
 
 interface GeneratesStubs
 {

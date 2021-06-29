@@ -13,7 +13,7 @@
         </ignoreFiles>
     </projectFiles>
     <plugins>
-        <pluginClass class="Psalm\LaravelPlugin\Plugin"/>
+        <pluginClass class="BrokeYourBike\LaravelPlugin\Plugin"/>
     </plugins>
     <issueHandlers>
         <ParamNameMismatch errorLevel="suppress" />

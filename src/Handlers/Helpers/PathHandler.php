@@ -1,18 +1,18 @@
 <?php declare(strict_types=1);
 
-namespace Psalm\LaravelPlugin\Handlers\Helpers;
+namespace BrokeYourBike\LaravelPlugin\Handlers\Helpers;
 
-use Psalm\CodeLocation;
-use Psalm\Context;
-use Psalm\LaravelPlugin\Providers\ApplicationProvider;
-use Psalm\Plugin\Hook\FunctionReturnTypeProviderInterface;
-use Psalm\Plugin\Hook\MethodReturnTypeProviderInterface;
-use Psalm\StatementsSource;
-use Psalm\Type\Atomic\TLiteralString;
-use Psalm\Type\Union;
-use function get_class;
-use function in_array;
 use function is_string;
+use function in_array;
+use function get_class;
+use Psalm\Type\Union;
+use Psalm\Type\Atomic\TLiteralString;
+use Psalm\StatementsSource;
+use Psalm\Plugin\Hook\MethodReturnTypeProviderInterface;
+use Psalm\Plugin\Hook\FunctionReturnTypeProviderInterface;
+use Psalm\Context;
+use Psalm\CodeLocation;
+use BrokeYourBike\LaravelPlugin\Providers\ApplicationProvider;
 
 final class PathHandler implements FunctionReturnTypeProviderInterface, MethodReturnTypeProviderInterface
 {

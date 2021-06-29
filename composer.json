@@ -27,17 +27,17 @@
     ],
     "extra": {
         "psalm": {
-            "pluginClass": "Psalm\\LaravelPlugin\\Plugin"
+            "pluginClass": "BrokeYourBike\\LaravelPlugin\\Plugin"
         }
     },
     "autoload": {
         "psr-4": {
-            "Psalm\\LaravelPlugin\\": "src"
+            "BrokeYourBike\\LaravelPlugin\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\Psalm\\LaravelPlugin\\": "tests"
+            "Tests\\BrokeYourBike\\LaravelPlugin\\": "tests"
         }
     },
     "scripts": {

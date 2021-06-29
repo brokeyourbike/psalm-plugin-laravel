@@ -1,16 +1,16 @@
 <?php
 
-namespace Psalm\LaravelPlugin\Handlers\Eloquent;
+namespace BrokeYourBike\LaravelPlugin\Handlers\Eloquent;
 
-use Psalm\CodeLocation;
-use Psalm\Context;
-use Psalm\LaravelPlugin\Providers\ModelStubProvider;
-use Psalm\Plugin\Hook\PropertyExistenceProviderInterface;
-use Psalm\Plugin\Hook\PropertyTypeProviderInterface;
-use Psalm\Plugin\Hook\PropertyVisibilityProviderInterface;
-use Psalm\StatementsSource;
-use Psalm\Type;
 use function str_replace;
+use Psalm\Type;
+use Psalm\StatementsSource;
+use Psalm\Plugin\Hook\PropertyVisibilityProviderInterface;
+use Psalm\Plugin\Hook\PropertyTypeProviderInterface;
+use Psalm\Plugin\Hook\PropertyExistenceProviderInterface;
+use Psalm\Context;
+use Psalm\CodeLocation;
+use BrokeYourBike\LaravelPlugin\Providers\ModelStubProvider;
 
 final class ModelPropertyAccessorHandler implements PropertyExistenceProviderInterface, PropertyVisibilityProviderInterface, PropertyTypeProviderInterface
 {

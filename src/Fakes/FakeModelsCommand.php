@@ -1,25 +1,14 @@
 <?php
 
-namespace Psalm\LaravelPlugin\Fakes;
+namespace BrokeYourBike\LaravelPlugin\Fakes;
 
 use function in_array;
 use function implode;
 use function get_class;
 use function config;
-use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Input\InputOption;
-use Symfony\Component\Console\Input\InputArgument;
-use ReflectionClass;
-use Psalm\LaravelPlugin\Handlers\Eloquent\Schema\SchemaAggregator;
 use Illuminate\Support\Str;
 use Illuminate\Filesystem\Filesystem;
-use Illuminate\Database\Eloquent\Relations\Relation;
-use Illuminate\Console\Command;
-use Composer\Autoload\ClassMapGenerator;
-use Barryvdh\Reflection\DocBlock\Tag;
-use Barryvdh\Reflection\DocBlock\Serializer as DocBlockSerializer;
-use Barryvdh\Reflection\DocBlock\Context;
-use Barryvdh\Reflection\DocBlock;
+use BrokeYourBike\LaravelPlugin\Handlers\Eloquent\Schema\SchemaAggregator;
 
 class FakeModelsCommand extends \Barryvdh\LaravelIdeHelper\Console\ModelsCommand
 {

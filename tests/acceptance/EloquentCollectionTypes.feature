@@ -11,7 +11,7 @@ Feature: Eloquent Collection Types
           <ignoreFiles> <directory name="../../vendor"/> </ignoreFiles>
         </projectFiles>
         <plugins>
-          <pluginClass class="Psalm\LaravelPlugin\Plugin"/>
+          <pluginClass class="BrokeYourBike\LaravelPlugin\Plugin"/>
         </plugins>
       </psalm>
       """
@@ -21,9 +21,9 @@ Feature: Eloquent Collection Types
     """
     <?php declare(strict_types=1);
 
-    namespace Tests\Psalm\LaravelPlugin\Models;
+    namespace Tests\BrokeYourBike\LaravelPlugin\Models;
 
-    use Tests\Psalm\LaravelPlugin\Models\User;
+    use Tests\BrokeYourBike\LaravelPlugin\Models\User;
 
     final class UserRepository
     {

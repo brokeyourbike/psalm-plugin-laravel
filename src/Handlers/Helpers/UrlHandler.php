@@ -1,15 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace Psalm\LaravelPlugin\Handlers\Helpers;
+namespace BrokeYourBike\LaravelPlugin\Handlers\Helpers;
 
-use Illuminate\Contracts\Routing\UrlGenerator;
-use Psalm\CodeLocation;
-use Psalm\Context;
-use Psalm\Plugin\Hook\FunctionReturnTypeProviderInterface;
-use Psalm\StatementsSource;
-use Psalm\Type;
-use Psalm\Type\Atomic\TNamedObject;
 use Psalm\Type\Union;
+use Psalm\Type\Atomic\TNamedObject;
+use Psalm\Type;
+use Psalm\StatementsSource;
+use Psalm\Plugin\Hook\FunctionReturnTypeProviderInterface;
+use Psalm\Context;
+use Psalm\CodeLocation;
+use Illuminate\Contracts\Routing\UrlGenerator;
 
 final class UrlHandler implements FunctionReturnTypeProviderInterface
 {

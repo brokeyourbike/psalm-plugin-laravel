@@ -1,10 +1,10 @@
 <?php
 
-namespace Psalm\LaravelPlugin\Providers;
+namespace BrokeYourBike\LaravelPlugin\Providers;
 
-use Psalm\LaravelPlugin\Fakes\FakeFilesystem;
-use Psalm\LaravelPlugin\Providers\ApplicationProvider;
 use function unlink;
+use BrokeYourBike\LaravelPlugin\Providers\ApplicationProvider;
+use BrokeYourBike\LaravelPlugin\Fakes\FakeFilesystem;
 
 final class FacadeStubProvider implements GeneratesStubs
 {

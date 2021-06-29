@@ -1,21 +1,21 @@
 <?php declare(strict_types=1);
 
-namespace Psalm\LaravelPlugin\Util;
+namespace BrokeYourBike\LaravelPlugin\Util;
 
-use Illuminate\Contracts\Container\BindingResolutionException;
-use Psalm\LaravelPlugin\Providers\ApplicationProvider;
-use Psalm\NodeTypeProvider;
-use Psalm\Type\Atomic\TLiteralString;
-use Psalm\Type\Atomic\TNamedObject;
-use Psalm\Type\Union;
-use ReflectionException;
-use function array_key_exists;
-use function get_class;
-use function count;
 use function is_string;
 use function is_object;
-use function class_exists;
 use function is_null;
+use function get_class;
+use function count;
+use function class_exists;
+use function array_key_exists;
+use ReflectionException;
+use Psalm\Type\Union;
+use Psalm\Type\Atomic\TNamedObject;
+use Psalm\Type\Atomic\TLiteralString;
+use Psalm\NodeTypeProvider;
+use Illuminate\Contracts\Container\BindingResolutionException;
+use BrokeYourBike\LaravelPlugin\Providers\ApplicationProvider;
 
 final class ContainerResolver
 {

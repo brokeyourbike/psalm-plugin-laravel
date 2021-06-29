@@ -1,31 +1,29 @@
 <?php
 
-namespace Psalm\LaravelPlugin\Handlers\Application;
+namespace BrokeYourBike\LaravelPlugin\Handlers\Application;
 
-use Illuminate\Foundation\AliasLoader;
-use Illuminate\Support\Facades\RateLimiter;
-use Psalm\CodeLocation;
-use Psalm\Context;
-use Psalm\Internal\MethodIdentifier;
-use Psalm\LaravelPlugin\Providers\ApplicationInterfaceProvider;
-use Psalm\LaravelPlugin\Providers\ApplicationProvider;
-use Psalm\LaravelPlugin\Util\ContainerResolver;
-use Psalm\Plugin\EventHandler\AfterClassLikeVisitInterface;
-use Psalm\Plugin\EventHandler\Event\AfterClassLikeVisitEvent;
-use Psalm\Plugin\Hook\FunctionReturnTypeProviderInterface;
-use Psalm\Plugin\Hook\MethodReturnTypeProviderInterface;
-use Psalm\StatementsSource;
-use Psalm\Type;
-use Psalm\Type\Atomic\TNamedObject;
-use Psalm\Type\Union;
-use function in_array;
-use function array_merge;
-use function array_values;
 use function strtolower;
-use function get_class;
-use function array_filter;
-use function array_keys;
 use function is_object;
+use function in_array;
+use function get_class;
+use function array_values;
+use function array_merge;
+use function array_keys;
+use function array_filter;
+use Psalm\Type\Union;
+use Psalm\Type\Atomic\TNamedObject;
+use Psalm\Type;
+use Psalm\StatementsSource;
+use Psalm\Plugin\Hook\MethodReturnTypeProviderInterface;
+use Psalm\Plugin\Hook\FunctionReturnTypeProviderInterface;
+use Psalm\Plugin\EventHandler\Event\AfterClassLikeVisitEvent;
+use Psalm\Plugin\EventHandler\AfterClassLikeVisitInterface;
+use Psalm\Internal\MethodIdentifier;
+use Psalm\Context;
+use Psalm\CodeLocation;
+use BrokeYourBike\LaravelPlugin\Util\ContainerResolver;
+use BrokeYourBike\LaravelPlugin\Providers\ApplicationProvider;
+use BrokeYourBike\LaravelPlugin\Providers\ApplicationInterfaceProvider;
 
 /**
  * @psalm-suppress DeprecatedInterface

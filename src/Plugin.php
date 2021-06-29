@@ -1,25 +1,25 @@
 <?php
-namespace Psalm\LaravelPlugin;
+namespace BrokeYourBike\LaravelPlugin;
 
-use Psalm\LaravelPlugin\Handlers\Application\ContainerHandler;
-use Psalm\LaravelPlugin\Handlers\Application\OffsetHandler;
-use Psalm\LaravelPlugin\Handlers\Eloquent\ModelMethodHandler;
-use Psalm\LaravelPlugin\Handlers\Eloquent\ModelPropertyAccessorHandler;
-use Psalm\LaravelPlugin\Handlers\Eloquent\ModelRelationshipPropertyHandler;
-use Psalm\LaravelPlugin\Handlers\Eloquent\RelationsMethodHandler;
-use Psalm\LaravelPlugin\Handlers\Helpers\PathHandler;
-use Psalm\LaravelPlugin\Handlers\Helpers\RedirectHandler;
-use Psalm\LaravelPlugin\Handlers\Helpers\TransHandler;
-use Psalm\LaravelPlugin\Handlers\Helpers\UrlHandler;
-use Psalm\LaravelPlugin\Handlers\Helpers\ViewHandler;
-use Psalm\LaravelPlugin\Providers\FacadeStubProvider;
-use Psalm\LaravelPlugin\Providers\ModelStubProvider;
-use Psalm\LaravelPlugin\Providers\ApplicationProvider;
-use Psalm\Plugin\PluginEntryPointInterface;
-use Psalm\Plugin\RegistrationInterface;
-use SimpleXMLElement;
-use function dirname;
 use function glob;
+use function dirname;
+use SimpleXMLElement;
+use Psalm\Plugin\RegistrationInterface;
+use Psalm\Plugin\PluginEntryPointInterface;
+use BrokeYourBike\LaravelPlugin\Providers\ModelStubProvider;
+use BrokeYourBike\LaravelPlugin\Providers\FacadeStubProvider;
+use BrokeYourBike\LaravelPlugin\Providers\ApplicationProvider;
+use BrokeYourBike\LaravelPlugin\Handlers\Helpers\ViewHandler;
+use BrokeYourBike\LaravelPlugin\Handlers\Helpers\UrlHandler;
+use BrokeYourBike\LaravelPlugin\Handlers\Helpers\TransHandler;
+use BrokeYourBike\LaravelPlugin\Handlers\Helpers\RedirectHandler;
+use BrokeYourBike\LaravelPlugin\Handlers\Helpers\PathHandler;
+use BrokeYourBike\LaravelPlugin\Handlers\Eloquent\RelationsMethodHandler;
+use BrokeYourBike\LaravelPlugin\Handlers\Eloquent\ModelRelationshipPropertyHandler;
+use BrokeYourBike\LaravelPlugin\Handlers\Eloquent\ModelPropertyAccessorHandler;
+use BrokeYourBike\LaravelPlugin\Handlers\Eloquent\ModelMethodHandler;
+use BrokeYourBike\LaravelPlugin\Handlers\Application\OffsetHandler;
+use BrokeYourBike\LaravelPlugin\Handlers\Application\ContainerHandler;
 
 class Plugin implements PluginEntryPointInterface
 {

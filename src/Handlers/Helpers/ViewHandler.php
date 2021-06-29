@@ -1,12 +1,12 @@
 <?php
 
-namespace Psalm\LaravelPlugin\Handlers\Helpers;
+namespace BrokeYourBike\LaravelPlugin\Handlers\Helpers;
 
-use PhpParser;
-use Psalm\Context;
-use Psalm\CodeLocation;
 use Psalm\Type;
 use Psalm\StatementsSource;
+use Psalm\Context;
+use Psalm\CodeLocation;
+use PhpParser;
 
 class ViewHandler implements \Psalm\Plugin\Hook\FunctionReturnTypeProviderInterface
 {

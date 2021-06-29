@@ -11,7 +11,7 @@ Feature: Database Builder Types
           <ignoreFiles> <directory name="../../vendor"/> </ignoreFiles>
         </projectFiles>
         <plugins>
-          <pluginClass class="Psalm\LaravelPlugin\Plugin"/>
+          <pluginClass class="BrokeYourBike\LaravelPlugin\Plugin"/>
         </plugins>
       </psalm>
       """
@@ -21,7 +21,7 @@ Feature: Database Builder Types
     """
     <?php declare(strict_types=1);
 
-    use Tests\Psalm\LaravelPlugin\Models\User;
+    use Tests\BrokeYourBike\LaravelPlugin\Models\User;
 
     final class UserRepository
     {

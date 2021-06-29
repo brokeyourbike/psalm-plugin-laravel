@@ -1,21 +1,20 @@
 <?php
 
-namespace Psalm\LaravelPlugin\Handlers\Eloquent;
+namespace BrokeYourBike\LaravelPlugin\Handlers\Eloquent;
 
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\HasManyThrough;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Illuminate\Database\Eloquent\Relations\MorphToMany;
-use PhpParser;
-use Psalm\Context;
-use Psalm\CodeLocation;
-use Psalm\LaravelPlugin\Providers\ModelStubProvider;
+use function in_array;
 use Psalm\Type;
 use Psalm\StatementsSource;
-use function in_array;
-use function str_replace;
+use Psalm\Context;
+use Psalm\CodeLocation;
+use PhpParser;
+use Illuminate\Database\Eloquent\Relations\MorphToMany;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Collection;
+use BrokeYourBike\LaravelPlugin\Providers\ModelStubProvider;
 
 /**
  * @psalm-suppress DeprecatedInterface

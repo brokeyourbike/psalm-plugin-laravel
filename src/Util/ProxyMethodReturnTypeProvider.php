@@ -1,11 +1,11 @@
 <?php
 
-namespace Psalm\LaravelPlugin\Util;
+namespace BrokeYourBike\LaravelPlugin\Util;
 
-use Psalm\Context;
-use Psalm\Type\Atomic\TNamedObject;
-use Psalm\Type\Union;
 use function in_array;
+use Psalm\Type\Union;
+use Psalm\Type\Atomic\TNamedObject;
+use Psalm\Context;
 
 final class ProxyMethodReturnTypeProvider
 {

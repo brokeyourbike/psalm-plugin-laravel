@@ -1,15 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace Psalm\LaravelPlugin\Handlers\Helpers;
+namespace BrokeYourBike\LaravelPlugin\Handlers\Helpers;
 
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Routing\Redirector;
-use PhpParser;
-use Psalm\CodeLocation;
-use Psalm\Context;
-use Psalm\Plugin\Hook\FunctionReturnTypeProviderInterface;
-use Psalm\StatementsSource;
 use Psalm\Type;
+use Psalm\StatementsSource;
+use Psalm\Plugin\Hook\FunctionReturnTypeProviderInterface;
+use Psalm\Context;
+use Psalm\CodeLocation;
+use PhpParser;
+use Illuminate\Routing\Redirector;
+use Illuminate\Http\RedirectResponse;
 
 class RedirectHandler implements FunctionReturnTypeProviderInterface
 {

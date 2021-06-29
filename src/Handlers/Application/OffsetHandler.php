@@ -1,20 +1,20 @@
 <?php
 
-namespace Psalm\LaravelPlugin\Handlers\Application;
+namespace BrokeYourBike\LaravelPlugin\Handlers\Application;
 
-use Psalm\LaravelPlugin\Providers\ApplicationInterfaceProvider;
-use Psalm\LaravelPlugin\Providers\ApplicationProvider;
-use Psalm\LaravelPlugin\Util\ContainerResolver;
-use Psalm\Plugin\EventHandler\Event\MethodExistenceProviderEvent;
-use Psalm\Plugin\EventHandler\Event\MethodParamsProviderEvent;
-use Psalm\Plugin\EventHandler\Event\MethodReturnTypeProviderEvent;
-use Psalm\Plugin\EventHandler\Event\MethodVisibilityProviderEvent;
-use Psalm\Plugin\EventHandler\MethodExistenceProviderInterface;
-use Psalm\Plugin\EventHandler\MethodParamsProviderInterface;
-use Psalm\Plugin\EventHandler\MethodReturnTypeProviderInterface;
-use Psalm\Plugin\EventHandler\MethodVisibilityProviderInterface;
-use Psalm\Type;
 use function in_array;
+use Psalm\Type;
+use Psalm\Plugin\EventHandler\MethodVisibilityProviderInterface;
+use Psalm\Plugin\EventHandler\MethodReturnTypeProviderInterface;
+use Psalm\Plugin\EventHandler\MethodParamsProviderInterface;
+use Psalm\Plugin\EventHandler\MethodExistenceProviderInterface;
+use Psalm\Plugin\EventHandler\Event\MethodVisibilityProviderEvent;
+use Psalm\Plugin\EventHandler\Event\MethodReturnTypeProviderEvent;
+use Psalm\Plugin\EventHandler\Event\MethodParamsProviderEvent;
+use Psalm\Plugin\EventHandler\Event\MethodExistenceProviderEvent;
+use BrokeYourBike\LaravelPlugin\Util\ContainerResolver;
+use BrokeYourBike\LaravelPlugin\Providers\ApplicationProvider;
+use BrokeYourBike\LaravelPlugin\Providers\ApplicationInterfaceProvider;
 
 final class OffsetHandler implements
     MethodReturnTypeProviderInterface,

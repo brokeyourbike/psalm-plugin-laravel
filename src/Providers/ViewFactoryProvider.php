@@ -1,13 +1,13 @@
 <?php
 
-namespace Psalm\LaravelPlugin\Providers;
+namespace BrokeYourBike\LaravelPlugin\Providers;
 
-use Illuminate\View\Engines\EngineResolver;
-use Illuminate\View\Engines\PhpEngine;
-use Illuminate\View\Factory;
-use Illuminate\View\FileViewFinder;
-use Psalm\LaravelPlugin\Fakes\FakeFilesystem;
 use function dirname;
+use Illuminate\View\FileViewFinder;
+use Illuminate\View\Factory;
+use Illuminate\View\Engines\PhpEngine;
+use Illuminate\View\Engines\EngineResolver;
+use BrokeYourBike\LaravelPlugin\Fakes\FakeFilesystem;
 
 final class ViewFactoryProvider
 {
